@@ -15,7 +15,7 @@ setup(
     author='Ryan Pineo',
     author_email='ryanpineo@gmail.com',
     license='MIT',
-    url='https://github.com/RyanPineo/django-array-field-select',
+    url='https://github.com/silverlogic/django-array-field-select',
     packages=['array_field_select'],
     install_requires=['Django>=1.8'],
     classifiers=[
