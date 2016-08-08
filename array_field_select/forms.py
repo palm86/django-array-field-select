@@ -20,5 +20,5 @@ class SelectArrayField(Field):
         return self.base_field.clean(value)
 
     def validate(self, value):
-        if len(value) > self.max_length:
+        if value and len(value) > self.max_length:
             raise ValidationError(_('You can only choose {} or fewer options.  You chose {}'.format(self.max_length, len(value))))
