@@ -16,7 +16,7 @@ class SelectArrayField(Field):
 
     def clean(self, value):
         value = self.base_field.clean(value)
-        value = super().clean(value)
+        value = super(SelectArrayField, self).clean(value)
         return self.base_field.clean(value)
 
     def validate(self, value):
