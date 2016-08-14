@@ -12,7 +12,7 @@ class SelectArrayField(Field):
         self.base_field.choices = self.base_field.choices[1:]
         self.max_length = max_length
         self.widget = self.base_field.widget
-        super().__init__(**kwargs)
+        super(SelectArrayField, self).__init__(**kwargs)
 
     def clean(self, value):
         value = self.base_field.clean(value)
